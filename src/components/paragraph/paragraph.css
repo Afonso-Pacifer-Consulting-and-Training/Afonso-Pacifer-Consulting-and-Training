@@ -1,0 +1,11 @@
+.paragraph {
+  box-sizing: border-box;
+  width: 100%;
+  margin: var(--small-space) 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: var(--text-color-default);
+}

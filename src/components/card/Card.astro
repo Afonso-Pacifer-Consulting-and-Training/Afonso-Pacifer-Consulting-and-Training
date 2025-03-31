@@ -1,0 +1,30 @@
+---
+import Svg from '@cxa/astro-inline-svg';
+import Check from '../../assets/icons/check.svg?raw';
+import Close from '../../assets/icons/close.svg?raw';
+import { Image } from 'astro:assets';
+import './card.css';
+
+interface Props {
+	check?: Boolean,
+  notCheck?: Boolean,
+	image?: any,
+  alt?: any,
+}
+
+const { check, notCheck, image, alt="" } = Astro.props;
+---
+
+<div class="card">
+
+  {image && (<Image src={image} alt={alt} class="card__image" />)}
+
+  {check && (<Svg raw={Check} class="card__icon" />)}
+  
+  {notCheck && (<Svg raw={Close} class="card__icon card__icon--not" />)}
+
+  <p class="card__text">
+    <slot />
+  </p>
+
+</div>

@@ -1,0 +1,11 @@
+.headline {
+  box-sizing: border-box;
+  width: 100%;
+  margin: var(--medium-space) 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--text-color-default);
+}

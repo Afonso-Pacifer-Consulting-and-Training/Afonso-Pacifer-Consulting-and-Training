@@ -1,0 +1,340 @@
+---
+// ---------- Layout
+import Layout from '../layouts/Layout.astro';
+
+// ---------- Astro Components
+
+// ----- Organisms
+import Header from '../components/header/Header.astro';
+import Section from '../components/section/Section.astro';
+import Collumn from '../components/collumn/Collumn.astro';
+
+// ----- Molecules
+import Card from '../components/card/Card.astro';
+import VerticalModule from '../components/vertical-module/VerticalModule.astro';
+import HorizontalModule from '../components/horizontal-module/HorizontalModule.astro';
+import CtaCard from '../components/cta-card/CtaCard.astro';
+import List from '../components/list/List.astro';
+
+// ----- Atoms
+import Paragraph from '../components/paragraph/Paragraph.astro';
+import ModuleTitle from '../components/module-title/ModuleTitle.astro';
+import TitleHighlight from '../components/title-highlight/TitleHighlight.astro';
+import TextHighlight from '../components/text-highlight/TextHighlight.astro';
+import CtaButton from '../components/cta-button/CtaButton.astro';
+import ListItem from '../components/list-item/ListItem.astro';
+import Headline from '../components/headline/Headline.astro';
+
+// ---------- React Components
+import Dropdown from '../components/dropdown/Dropdown';
+
+// ---------- Images
+import htmlandcss from '../assets/images/htmlandcss.png';
+import profile from '../assets/images/profile.png';
+import garantia from '../assets/images/garantia.png';
+// import pug from '../assets/images/pug.png';
+// import gulp from '../assets/images/gulp.png';
+// import js from '../assets/images/js.png';
+// import stylus from '../assets/images/stylus.png';
+// import npm from '../assets/images/npm.png';
+---
+
+<Layout title="Crie uma aplicação Front-End profissional do ZERO ao Deploy e sem usar Frameworks">
+
+  <Header
+    videoPath="https://www.youtube.com/embed/VnvyvBa2WpE?si=xZ_Ye623ukRVLSfg"
+  >
+
+    <Headline>
+      Crie uma aplicação <TitleHighlight>Front-End</TitleHighlight> profissional do Zero ao Deploy!
+      <TitleHighlight>Sem usar Frameworks!</TitleHighlight>
+    </Headline>
+
+    <Paragraph>
+      Através de planejamento e <TextHighlight>boas práticas</TextHighlight>, iremos desde um processo de <TextHighlight>build robusto</TextHighlight>,  passando por muito <TextHighlight>live code</TextHighlight> até o <TextHighlight>Deploy automatizado.</TextHighlight>
+    </Paragraph>
+
+    <Paragraph>
+      Tudo isso contando com <TextHighlight>módulos exclusivos</TextHighlight> para <TextHighlight>nivelamento</TextHighlight> de conhecimento.
+    </Paragraph>
+
+    <Paragraph>
+      E claro, <TextHighlight>sem usar</TextHighlight> nenhuma Biblioteca ou Framework como <TextHighlight>React</TextHighlight>, <TextHighlight>Angular</TextHighlight> ou <TextHighlight>Vue.js</TextHighlight>!
+    </Paragraph>
+
+    <CtaButton text="Quero participar!" url="#cta-target"/>
+
+  </Header>
+
+  <Section title="Com esse treinamento você será capaz de:">
+
+    <Collumn>
+
+      <Card check>
+        <TextHighlight>
+          Organizar Tarefas e Definir um Roadmap
+        </TextHighlight>
+        <br/>
+        Aprenda a estruturar seu projeto desde o início, organizando tarefas e definindo prioridades com ferramentas como GitHub Projects.
+      </Card>
+
+      <Card check>
+        <TextHighlight>
+          Trabalhar com APIs e Dados Dinâmicos
+        </TextHighlight>
+        <br/>
+        Integre suas aplicações a APIs RESTful, permitindo que você crie interfaces dinâmicas e interativas que se adaptam às necessidades do usuário.
+      </Card>
+
+      <Card check>
+        <TextHighlight>
+          Construir Layouts Responsivos
+        </TextHighlight>
+        <br/>
+        Utilize técnicas avançadas de CSS, como Flexbox e Grid, para desenvolver layouts que funcionam perfeitamente em dispositivos de diferentes tamanhos.
+      </Card>
+
+      <Card check>
+        <TextHighlight>
+          Adotar Boas Práticas de Código
+        </TextHighlight>
+        <br/>
+        Aprenda sobre versionamento semântico, documentação e organização de código, preparando-se para trabalhar em equipe e em projetos de longo prazo.
+      </Card>
+
+    </Collumn>
+
+    <Collumn>
+
+      <Card check>
+        <TextHighlight>
+          Implementar Processos de Build Automatizados
+        </TextHighlight>
+        <br/>
+        Aprenda a utilizar ferramentas como Gulp.js para automatizar tarefas, economizando tempo e minimizando erros no seu fluxo de trabalho.
+      </Card>
+
+      <Card check>
+        <TextHighlight>
+          Implementar CI/CD com GitHub Actions
+        </TextHighlight>
+        <br/>
+        Domine a integração contínua e a entrega contínua, garantindo que seu código esteja sempre pronto para produção com automações eficientes.
+      </Card>
+
+      <Card check>
+        <TextHighlight>
+          Criar Componentes Reutilizáveis
+        </TextHighlight>
+        <br/>
+        Desenvolva uma biblioteca de componentes utilizando Pug e Stylus, aumentando a eficiência e a consistência em seus projetos.
+      </Card>
+
+      <Card check>
+        <TextHighlight>
+          Planejar a Semântica do HTML Antes de Codificar
+        </TextHighlight>
+        <br/>
+        Descubra a importância de planejar a estrutura semântica do seu HTML antes de iniciar a programação, melhorando a acessibilidade e a SEO.
+      </Card>
+
+    </Collumn>
+
+  </Section>
+
+  <Section title="Conheça os módulos e aulas:">
+
+    <Collumn>
+
+      <VerticalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Módulo 1</ModuleTitle>
+        <Dropdown label="Criando e organizando o repositório" client:load>
+          <List>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+          </List>
+        </Dropdown>
+      </VerticalModule>
+
+      <VerticalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Módulo 1</ModuleTitle>
+        <Dropdown label="Criando e organizando o repositório" client:load>
+          <List>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+          </List>
+        </Dropdown>
+      </VerticalModule>
+
+    </Collumn>
+
+    <Collumn>
+
+      <VerticalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Módulo 1</ModuleTitle>
+        <Dropdown label="Criando e organizando o repositório" client:load>
+          <List>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+          </List>
+        </Dropdown>
+      </VerticalModule>
+
+      <VerticalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Módulo 1</ModuleTitle>
+        <Dropdown label="Criando e organizando o repositório" client:load>
+          <List>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+          </List>
+        </Dropdown>
+      </VerticalModule>
+
+    </Collumn>
+
+    <Collumn>
+
+      <VerticalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Módulo 1</ModuleTitle>
+        <Dropdown label="Criando e organizando o repositório" client:load>
+          <List>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+          </List>
+        </Dropdown>
+      </VerticalModule>
+
+      <VerticalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Módulo 1</ModuleTitle>
+        <Dropdown label="Criando e organizando o repositório" client:load>
+          <List>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
+          </List>
+        </Dropdown>
+      </VerticalModule>
+
+    </Collumn>
+
+  </Section>
+
+  <!-- <Section title="O que vocè vai aprender aqui:">
+    <Collumn>
+
+      <HorizontalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Aprendizado Prático e Real</ModuleTitle>
+        <TextHighlight>Crie uma aplicação completa do zero ao deploy,</TextHighlight> aplicando as melhores práticas de mercado e ganhando experiência prática que você pode mostrar em entrevistas.
+      </HorizontalModule>
+
+      <HorizontalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Foco em Fundamentos Sólidos</ModuleTitle>
+        Domine HTML, CSS e JavaScript sem depender de frameworks, enquanto aprende a construir o seu processo de build do zero, garantindo uma base robusta que te permitirá se adaptar a qualquer tecnologia futura.
+      </HorizontalModule>
+
+      <HorizontalModule image={htmlandcss}  alt="s">
+        <ModuleTitle>Planejamento e Organização Eficiente</ModuleTitle>
+        <TextHighlight>Lorem ipsum dolor sit amet,  adipiscing elit.</TextHighlight>Lorem ipsum dolor sit amet,  adipiscing elit.
+      </HorizontalModule>
+  
+    </Collumn>
+  </Section> -->
+
+  <Section title="Conheça o seu professor!">
+    <Collumn>
+
+      <HorizontalModule image={profile}  alt="s">
+        <ModuleTitle>Afonso Pacifer</ModuleTitle>
+        Afonso Pacifer é um Software Engineer com mais de <TextHighlight>14 anos de experiência</TextHighlight>, especialista em Front-End e Node.js. Atualmente trabalha remoto para os EUA, como <TextHighlight>Senior Software Engineer em um dos maiores bancos do mundo.</TextHighlight> Com uma trajetória que inclui posições como <TextHighlight>Front-End Specialist</TextHighlight>, <TextHighlight>Developer Relations</TextHighlight> e <TextHighlight>Tech Lead,</TextHighlight> Afonso também é um apaixonado por UX Design, metodologias ágeis e TDD. Ele já palestrou em diversos eventos nacionais e internacionais, incluindo <TextHighlight>keynotes</TextHighlight> em grandes conferências como <TextHighlight>Front in Sampa</TextHighlight> e <TextHighlight>Conferência CSS Brasil</TextHighlight>.
+      </HorizontalModule>
+
+    </Collumn>
+  </Section>
+
+  <Section title="Depoimentos de quem já fez o treinamento:">
+    <Collumn>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+    </Collumn>
+
+    <Collumn>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+    </Collumn>
+
+    <Collumn>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+    </Collumn>
+  </Section>
+
+  <Section>
+    <Collumn>
+
+      <HorizontalModule image={garantia}  alt="s">
+        <ModuleTitle>Garantia Incondicional de 7 Dias</ModuleTitle>
+        Queremos que você se sinta totalmente <TextHighlight>seguro em sua decisão.</TextHighlight> Por isso, oferecemos uma garantia incondicional de 7 dias. Se, por qualquer motivo, você não estiver satisfeito com o conteúdo ou a experiência, devolveremos seu investimento integralmente, <TextHighlight>sem perguntas.</TextHighlight>
+      </HorizontalModule>
+
+    </Collumn>
+  </Section>
+
+  <Section title="Vá além de apenas usar frameworks!" id="cta-target">
+    <CtaCard 
+      percent = "50"
+      date = "10/12/2024"
+      oldValue = "375,80"
+      Installments = "12"
+      newValue = "18,87"
+      totalValue = "187,90"
+      url="https://pay.kiwify.com.br/LDrcZZG"
+    />
+  </Section>
+
+  <Section title="FAQ - Perguntas frequentes:">
+
+    <Collumn>
+
+      <Card>
+        <Dropdown label="Qual é o nível de conhecimento necessário para participar do curso?" client:only>
+          O curso é voltado para quem já possui conhecimentos básicos de HTML, CSS, terminal e Git. Não é necessário ter experiência prévia em JavaScript.
+        </Dropdown>
+      </Card>
+
+      <Card>
+        <Dropdown label="Os módulos são gravados ou ao vivo?" client:only>
+          Os módulos são gravados, e todos já estão disponíveis, permitindo que você estude no seu próprio tempo.
+        </Dropdown>
+      </Card>
+
+      <Card>
+        <Dropdown label="Posso acessar o curso depois de finalizar?" client:only>
+          Sim! Todos os materiais do curso estarão disponíveis para você acessar a qualquer momento, mesmo após a conclusão.
+        </Dropdown>
+      </Card>
+
+      <Card>
+        <Dropdown label="Receberei um certificado ao final do curso?" client:only>
+          Sim! Ao concluir todos os módulos você receberá um certificado que poderá ser adicionado ao seu currículo.
+        </Dropdown>
+      </Card>
+
+      <Card>
+        <Dropdown label="O curso é atualizado?" client:only>
+          Sim! Estamos constantemente atualizando o conteúdo do curso para refletir as melhores práticas e tecnologias mais recentes no desenvolvimento front-end.
+        </Dropdown>
+      </Card>
+
+      <Card>
+        <Dropdown label="Qual é a política de reembolso?" client:only>
+          Oferecemos uma garantia de satisfação. Se você não estiver satisfeito com o curso dentro de 7 dias, poderá solicitar o reembolso.
+        </Dropdown>
+      </Card>
+
+    </Collumn>
+
+  </Section>
+
+</Layout>

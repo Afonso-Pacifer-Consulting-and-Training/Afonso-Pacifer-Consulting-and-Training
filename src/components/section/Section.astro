@@ -1,0 +1,26 @@
+---
+import TitleHighlight from '../title-highlight/TitleHighlight.astro';
+import "./section.css";
+
+interface Props {
+	title?: string;
+  id?: string;
+}
+
+const { title, id } = Astro.props;
+---
+
+<section class="section" id={id}>
+
+  {title &&
+    <h2 class="section__title">
+      {title}
+      <!-- Lorem ipsum dolor sit amet, <TitleHighlight>consectetur</TitleHighlight> adipiscing elit.  -->
+    </h2>
+  }
+
+  <div class="section__container container">
+    <slot />
+  </div>
+
+</section>

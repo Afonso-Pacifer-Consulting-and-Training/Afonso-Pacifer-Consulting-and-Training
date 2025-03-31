@@ -1,0 +1,22 @@
+.vertical-module {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  padding: 8px;
+}
+
+.vertical-module__image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 790px) {
+  .vertical-module__image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

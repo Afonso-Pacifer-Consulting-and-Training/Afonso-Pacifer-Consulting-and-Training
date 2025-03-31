@@ -1,0 +1,54 @@
+/*
+  ========================
+  Header
+  ========================
+*/
+
+.header-container {
+  width: 100%;
+  background-image: url('../../assets//images/fe-bg.png');
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: var(--large-space) var(--medium-space);
+  gap: var(--medium-space);
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 990px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+.header__headline {
+  box-sizing: border-box;
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 990px) {
+  .header__headline {
+    width: 100%;
+  }
+}
+
+.header__image {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  /* border: 1px solid red; */
+}
+
+.header__video {
+  border-radius: 4px;
+  box-shadow: 10px 10px 0 var(--highlight-soft-color);
+}
+
+@media screen and (max-width: 990px) {
+  .header__video {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,21 @@
+---
+import './horizontal-module.css';
+import { Image } from 'astro:assets';
+
+interface Props {
+	image?: any,
+  alt?: any,
+}
+
+const { image, alt = "" } = Astro.props;
+---
+
+<div class="horizontal-module">
+
+  <Image src={image} alt={alt} class="horizontal-module__image" />
+
+  <div>
+    <slot/>
+  </div>
+
+</div>

@@ -1,0 +1,59 @@
+/*
+  ========================
+  Footer
+  ========================
+*/
+
+.footer {
+  background-color: var(--bar-background-color, #2F2F2F);
+  min-height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 var(--x-small-space);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.footer__text {
+  color: #dcdcdc;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.footer__icon {
+  fill: var(--highlight-soft-color);
+  width: 20px;
+  height: 20px;
+  margin: 0 var(--x-small-space);
+}
+
+.footer__icon--pulse {
+  animation: pulse 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.footer__icon--rotate {
+  animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
