@@ -2,7 +2,7 @@
 import Svg from '@cxa/astro-inline-svg';
 import Layout from '../layouts/Layout.astro';
 import LogoDefault from '../assets/branding/logo-dafault.svg?raw';
-import CreditCardIcon from '../assets/icons/credit-card.svg?raw';
+import '@fontsource/poppins';
 import './index.css'
 ---
 
@@ -10,24 +10,33 @@ import './index.css'
   <!-- <a href="/front-end-na-vida-real"> Front-End na vida real </a> -->
 
   <header class="home__header container">
+
     <Svg raw={LogoDefault} class="home__logo"/>
+
     <div class="home__header__logo-text--container">
 
       <small class="home__header__logo-text">Afonso Pacifer</small>
       <small class="home__header__logo-text">Consulting & Training</small>
 
     </div>
+
   </header>
 
   <main class="home__content container">
-    <h1 class="home__title">Alcance seu próximo nível na #carreira de Front-End engineer.</h1>
+
+    <h1 class="home__title">Alcance seu próximo nível <br/> na <b class="home--highlight">#</b>carreira de Front-End engineer<b class="home--highlight">.</b></h1>
     <h2 class="home__subtitle">Treinamentos para pessoas & consultoria para empresas</h2>
 
     <div>
-       <a class="home__link">Quem é Afonso Pacifer?</a>
-       <a class="home__link">Dúvidas?</a>
+
+      <a href="https://afonsopacifer.com/" class="home__link">Quem é Afonso Pacifer?</a>
+      <a href="" class="home__link">Dúvidas? <b class="home--highlight">contato@afonsopacifer.com</b></a>
+
     </div>
 
-     <strong class="home__beacon"><Svg raw={CreditCardIcon} class="home__beacon__icon"/> Você é ou foi aluno(a) mas não tem acesso aos treinamentos atualizados? <a class="home__beacon__link">Pegue seu novo acesso aqui!</a></strong>
+    <div>
+      <strong class="home__beacon">Você é ou foi aluno(a) mas não tem acesso aos treinamentos atualizados? <a href="" class="home__beacon__link home--highlight">Pegue seu novo acesso aqui!</a></strong>
+    </div>
+
   </main>
 </Layout>

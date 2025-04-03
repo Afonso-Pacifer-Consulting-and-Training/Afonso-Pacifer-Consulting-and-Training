@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.9.3",
     "@astrojs/react": "^3.6.2",
     "@cxa/astro-inline-svg": "^0.5.1",
+    "@fontsource/poppins": "^5.2.5",
     "@fontsource/roboto": "^5.1.0",
     "@types/react": "^18.3.6",
     "@types/react-dom": "^18.3.0",

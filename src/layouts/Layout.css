@@ -20,6 +20,7 @@
   --bar-background-color: #141313;
 
   /* Texts colors */
+  --font-default: 'Roboto', sans-serif;
   --text-color-default: #000;
   --text-color-soft: #fff;
 
