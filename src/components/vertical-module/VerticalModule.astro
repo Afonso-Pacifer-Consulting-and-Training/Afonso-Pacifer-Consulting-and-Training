@@ -1,18 +1,20 @@
 ---
 import './vertical-module.css';
+import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
 interface Props {
-	image?: any,
   alt?: any,
+  imagePath: string,
 }
 
-const { image, alt = "" } = Astro.props;
+
+const { alt = "", imagePath } = Astro.props;
 ---
 
 <div class="vertical-module">
 
-  <Image src={image} alt={alt} class="vertical-module__image" />
+  <img src=`/images/${imagePath}` alt={alt} class="vertical-module__image" />
 
   <slot/>
 

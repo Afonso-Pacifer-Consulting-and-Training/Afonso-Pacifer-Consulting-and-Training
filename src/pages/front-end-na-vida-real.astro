@@ -30,7 +30,7 @@ import Headline from '../components/headline/Headline.astro';
 import Dropdown from '../components/dropdown/Dropdown';
 
 // ---------- Images
-import htmlandcss from '../assets/images/htmlandcss.png';
+// import htmlandcss from '../assets/images/htmlandcss.png';
 import profile from '../assets/images/profile.png';
 import garantia from '../assets/images/garantia.png';
 // import pug from '../assets/images/pug.png';
@@ -145,87 +145,26 @@ import garantia from '../assets/images/garantia.png';
   </Section>
 
   <Section title="Conheça os módulos e aulas:">
-
     <Collumn>
 
       {db.courses.sections.modules.map((item) => (
-        <VerticalModule image={htmlandcss} alt="s">
+        <VerticalModule imagePath={item.imagePath} alt="s">
+
           <ModuleTitle>{item.title}</ModuleTitle>
+
           <Dropdown label={item.subtitle} client:load>
+
             <List>
-              {item.dropdown.map((content) => (
-                <ListItem> {content} </ListItem>
-              ))}
+              {item.dropdown.map((content) => (<ListItem> {content} </ListItem>))}
             </List>
+
           </Dropdown>
+
         </VerticalModule>
       ))}
 
     </Collumn>
-
-    <!-- <Collumn>
-
-      <VerticalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Módulo 1</ModuleTitle>
-        <Dropdown label="Criando e organizando o repositório" client:load>
-          <List>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-          </List>
-        </Dropdown>
-      </VerticalModule>
-
-      <VerticalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Módulo 1</ModuleTitle>
-        <Dropdown label="Criando e organizando o repositório" client:load>
-          <List>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-          </List>
-        </Dropdown>
-      </VerticalModule>
-
-    </Collumn>
-
-    <Collumn>
-
-            {db.courses.sections.modules.map((item) => (
-        <VerticalModule image={htmlandcss} alt="s">
-          <ModuleTitle>{item.title}</ModuleTitle>
-          <Dropdown label={item.subtitle} client:load>
-            <List>
-              {item.dropdown.map((i) => (
-                <ListItem> {i} </ListItem>
-              ))}
-            </List>
-          </Dropdown>
-        </VerticalModule>
-      ))}
-
-    </Collumn> -->
-
   </Section>
-
-  <!-- <Section title="O que vocè vai aprender aqui:">
-    <Collumn>
-
-      <HorizontalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Aprendizado Prático e Real</ModuleTitle>
-        <TextHighlight>Crie uma aplicação completa do zero ao deploy,</TextHighlight> aplicando as melhores práticas de mercado e ganhando experiência prática que você pode mostrar em entrevistas.
-      </HorizontalModule>
-
-      <HorizontalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Foco em Fundamentos Sólidos</ModuleTitle>
-        Domine HTML, CSS e JavaScript sem depender de frameworks, enquanto aprende a construir o seu processo de build do zero, garantindo uma base robusta que te permitirá se adaptar a qualquer tecnologia futura.
-      </HorizontalModule>
-
-      <HorizontalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Planejamento e Organização Eficiente</ModuleTitle>
-        <TextHighlight>Lorem ipsum dolor sit amet,  adipiscing elit.</TextHighlight>Lorem ipsum dolor sit amet,  adipiscing elit.
-      </HorizontalModule>
-  
-    </Collumn>
-  </Section> -->
 
   <Section title="Conheça o seu professor!">
     <Collumn>

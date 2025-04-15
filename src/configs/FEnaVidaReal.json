@@ -25,7 +25,7 @@
           {
           "title": "Modulo 1dfkgkfjgkfgk",
           "subtitle": "Criando de organizando o repositoriozão.",
-          "imagePath": "../assets/images/htmlandcss.png",
+          "imagePath": "htmlandcss.png",
           "dropdown": [
             "Lorena ena ena ena.",
             "Lorem ipsum dolor lorem, impsum."
@@ -34,7 +34,7 @@
           {
             "title": "Modulo 2 Teste",
             "subtitle": "Criando de organizando o repositorio.",
-            "imagePath": "../assets/images/htmlandcss.png",
+            "imagePath": "pug.png",
             "dropdown": [
               "Lorem ipsum dolor sit amet",
               "Lorem ipsum dolor sit amet"
