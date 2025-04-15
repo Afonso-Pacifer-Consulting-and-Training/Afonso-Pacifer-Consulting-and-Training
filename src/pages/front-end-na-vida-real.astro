@@ -1,6 +1,7 @@
 ---
 // ---------- Layout
 import Layout from '../layouts/Layout.astro';
+import db from '../configs/FEnaVidaReal.json'
 
 // ---------- Astro Components
 
@@ -37,6 +38,7 @@ import garantia from '../assets/images/garantia.png';
 // import js from '../assets/images/js.png';
 // import stylus from '../assets/images/stylus.png';
 // import npm from '../assets/images/npm.png';
+
 ---
 
 <Layout title="Crie uma aplicação Front-End profissional do ZERO ao Deploy e sem usar Frameworks">
@@ -146,29 +148,22 @@ import garantia from '../assets/images/garantia.png';
 
     <Collumn>
 
-      <VerticalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Módulo 1</ModuleTitle>
-        <Dropdown label="Criando e organizando o repositório" client:load>
-          <List>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-          </List>
-        </Dropdown>
-      </VerticalModule>
-
-      <VerticalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Módulo 1</ModuleTitle>
-        <Dropdown label="Criando e organizando o repositório" client:load>
-          <List>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-          </List>
-        </Dropdown>
-      </VerticalModule>
+      {db.courses.sections.modules.map((item) => (
+        <VerticalModule image={htmlandcss} alt="s">
+          <ModuleTitle>{item.title}</ModuleTitle>
+          <Dropdown label={item.subtitle} client:load>
+            <List>
+              {item.dropdown.map((content) => (
+                <ListItem> {content} </ListItem>
+              ))}
+            </List>
+          </Dropdown>
+        </VerticalModule>
+      ))}
 
     </Collumn>
 
-    <Collumn>
+    <!-- <Collumn>
 
       <VerticalModule image={htmlandcss}  alt="s">
         <ModuleTitle>Módulo 1</ModuleTitle>
@@ -194,27 +189,20 @@ import garantia from '../assets/images/garantia.png';
 
     <Collumn>
 
-      <VerticalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Módulo 1</ModuleTitle>
-        <Dropdown label="Criando e organizando o repositório" client:load>
-          <List>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-          </List>
-        </Dropdown>
-      </VerticalModule>
+            {db.courses.sections.modules.map((item) => (
+        <VerticalModule image={htmlandcss} alt="s">
+          <ModuleTitle>{item.title}</ModuleTitle>
+          <Dropdown label={item.subtitle} client:load>
+            <List>
+              {item.dropdown.map((i) => (
+                <ListItem> {i} </ListItem>
+              ))}
+            </List>
+          </Dropdown>
+        </VerticalModule>
+      ))}
 
-      <VerticalModule image={htmlandcss}  alt="s">
-        <ModuleTitle>Módulo 1</ModuleTitle>
-        <Dropdown label="Criando e organizando o repositório" client:load>
-          <List>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-            <ListItem> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </ListItem>
-          </List>
-        </Dropdown>
-      </VerticalModule>
-
-    </Collumn>
+    </Collumn> -->
 
   </Section>
 

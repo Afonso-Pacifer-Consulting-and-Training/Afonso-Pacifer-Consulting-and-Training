@@ -1,0 +1,46 @@
+{
+  "courses" : {
+      "_id": "c001",
+      "courseName": "Front-End na vida real",
+      "videoPath": "https://www.youtube.com/embed/VnvyvBa2WpE?si=xZ_Ye623ukRVLSfg",
+      "primaryColor": "#f97316",
+      "price": 999,
+      "sections": {
+        "hero": {
+          "title": "Crie uma aplicação Front-End profissional do Zero ao Deploy! Sem usar Frameworks!",
+          "description": "Conquiste mais clientes com sua própria plataforma",
+          "cta": "QUERO PARTICIPAR"
+        },
+        "content": [
+          {
+          "title": "Organizar Tarefas e Definir um Roadmap",
+          "description": "Aprenda a estruturar seu projeto desde o início, organizando tarefas e definindo prioridades com ferramentas como GitHub Projects."
+          },
+          {
+            "title": "Implementar Processos de Build Automatizados",
+            "description": "Aprenda a utilizar ferramentas como Gulp.js para automatizar tarefas, economizando tempo e minimizando erros no seu fluxo de trabalho."
+          }
+        ],
+        "modules": [
+          {
+          "title": "Modulo 1dfkgkfjgkfgk",
+          "subtitle": "Criando de organizando o repositoriozão.",
+          "imagePath": "../assets/images/htmlandcss.png",
+          "dropdown": [
+            "Lorena ena ena ena.",
+            "Lorem ipsum dolor lorem, impsum."
+          ]
+          },
+          {
+            "title": "Modulo 2 Teste",
+            "subtitle": "Criando de organizando o repositorio.",
+            "imagePath": "../assets/images/htmlandcss.png",
+            "dropdown": [
+              "Lorem ipsum dolor sit amet",
+              "Lorem ipsum dolor sit amet"
+            ]
+            }
+        ]
+      }
+  }
+}
