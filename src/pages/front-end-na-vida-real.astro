@@ -145,25 +145,22 @@ import garantia from '../assets/images/garantia.png';
   </Section>
 
   <Section title="Conheça os módulos e aulas:">
-    <Collumn>
 
-      {db.courses.sections.modules.map((item) => (
-        <VerticalModule imagePath={item.imagePath} alt="s">
+    {db.courses.sections.modules.map((item) => (
+      <VerticalModule imagePath={item.imagePath} alt="s">
 
-          <ModuleTitle>{item.title}</ModuleTitle>
+        <ModuleTitle>{item.title}</ModuleTitle>
 
-          <Dropdown label={item.subtitle} client:load>
+        <Dropdown label={item.subtitle} client:load>
 
-            <List>
-              {item.dropdown.map((content) => (<ListItem> {content} </ListItem>))}
-            </List>
+          <List>
+            {item.dropdown.map((content) => (<ListItem> {content} </ListItem>))}
+          </List>
 
-          </Dropdown>
+        </Dropdown>
+      </VerticalModule>
+    ))}
 
-        </VerticalModule>
-      ))}
-
-    </Collumn>
   </Section>
 
   <Section title="Conheça o seu professor!">
@@ -179,28 +176,28 @@ import garantia from '../assets/images/garantia.png';
 
   <Section title="Depoimentos de quem já fez o treinamento:">
     <Collumn>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
     </Collumn>
 
     <Collumn>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
     </Collumn>
 
     <Collumn>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
-      <Card image={profile}  alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
+      <Card image={profile} alt="s"><TextHighlight>Afonso Pacifer</TextHighlight><br/>Lorem ipsum dolor sit amet,  adipiscing elit.</Card>
     </Collumn>
   </Section>
 
   <Section>
     <Collumn>
 
-      <HorizontalModule image={garantia}  alt="s">
+      <HorizontalModule image={garantia} alt="s">
         <ModuleTitle>Garantia Incondicional de 7 Dias</ModuleTitle>
         Queremos que você se sinta totalmente <TextHighlight>seguro em sua decisão.</TextHighlight> Por isso, oferecemos uma garantia incondicional de 7 dias. Se, por qualquer motivo, você não estiver satisfeito com o conteúdo ou a experiência, devolveremos seu investimento integralmente, <TextHighlight>sem perguntas.</TextHighlight>
       </HorizontalModule>
