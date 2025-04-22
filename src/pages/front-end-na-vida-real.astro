@@ -30,15 +30,9 @@ import Headline from '../components/headline/Headline.astro';
 import Dropdown from '../components/dropdown/Dropdown';
 
 // ---------- Images
-// import htmlandcss from '../assets/images/htmlandcss.png';
 import profile from '../assets/images/profile.png';
 import garantia from '../assets/images/garantia.png';
-// import pug from '../assets/images/pug.png';
-// import gulp from '../assets/images/gulp.png';
-// import js from '../assets/images/js.png';
-// import stylus from '../assets/images/stylus.png';
-// import npm from '../assets/images/npm.png';
-
+import Row from '../components/row/Row.astro';
 ---
 
 <Layout title="Crie uma aplicação Front-End profissional do ZERO ao Deploy e sem usar Frameworks">
@@ -145,6 +139,7 @@ import garantia from '../assets/images/garantia.png';
   </Section>
 
   <Section title="Conheça os módulos e aulas:">
+    <Row>
 
     {db.courses.sections.modules.map((item) => (
       <VerticalModule imagePath={item.imagePath} alt="s">
@@ -161,6 +156,7 @@ import garantia from '../assets/images/garantia.png';
       </VerticalModule>
     ))}
 
+    </Row>
   </Section>
 
   <Section title="Conheça o seu professor!">

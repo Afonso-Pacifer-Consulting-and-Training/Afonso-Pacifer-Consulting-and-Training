@@ -28,12 +28,12 @@ const Dropdown = ({label, children}) => {
         
       </button>
 
-      { open ? 
-  
+      { open ?
+
         <div className="dropdown__content" id="username-desc">
           { children }
         </div>
-  
+
       : null }
 
     </div>

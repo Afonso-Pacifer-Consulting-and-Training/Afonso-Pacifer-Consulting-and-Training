@@ -1,13 +1,10 @@
 ---
 import './vertical-module.css';
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
 
 interface Props {
   alt?: any,
   imagePath: string,
 }
-
 
 const { alt = "", imagePath } = Astro.props;
 ---

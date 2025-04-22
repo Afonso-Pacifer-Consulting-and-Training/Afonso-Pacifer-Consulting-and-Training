@@ -1,7 +1,6 @@
 .section {
   box-sizing: border-box;
   padding: var(--large-space) 0;
-  /* border: 1px solid red; */
 }
 
 .section:nth-child(even) {
@@ -20,13 +19,13 @@
   font-size: 36px;
   line-height: 38px;
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 .section__container {
   display: flex;
   justify-content: center;
   gap: var(--small-space);
+  /* flex-wrap: wrap; */
 }
 
 @media screen and (max-width: 790px) {
