@@ -1,0 +1,14 @@
+---
+import './cta-button.css';
+
+interface Props {
+	text: string;
+  url: string;
+}
+
+const { text, url } = Astro.props;
+---
+
+<a class="cta-button" href={url}>
+  {text}
+</a>

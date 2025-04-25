@@ -1,0 +1,38 @@
+/*
+  ========================
+  CTA Button
+  ========================
+*/
+
+.cta-button {
+  box-sizing: border-box;
+  font-size: 18px;
+  display: inline-flex;
+  justify-content: center;
+  margin: var(--small-space) 0;
+  padding: var(--small-space) var(--large-space);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: var(--highlight-color);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  transition: background-image .1s, color .1s;
+  color: var(--text-color-soft);
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.2));
+}
+  
+.cta-button:active {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.2));
+}
+  
+.cta-button:focus-visible {
+  outline: none;
+  border: 2px solid var(--text-color-default);
+  text-decoration: underline;
+}

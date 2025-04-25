@@ -1,0 +1,59 @@
+/*
+  ========================
+  Design Tokens
+  ========================
+*/
+
+:root {
+
+  /* Layout colors */
+  /* --highlight-color: #fd67c3;
+  --highlight-soft-color: #fec7fe;
+  --page-background-color: #f8f6f8;
+  --section-even-background-color: #f7e8ff; */
+
+  --highlight-color: #de009d;
+  --highlight-soft-color: #ffbde1;
+  --page-background-color: #f8f6f8;
+  --section-even-background-color: #f5e6f5;
+
+  --bar-background-color: #141313;
+
+  /* Texts colors */
+  --font-default: 'Roboto', sans-serif;
+  --text-color-default: #000;
+  --text-color-soft: #fff;
+
+  /* Spacing patterns */
+  --page-width: 1100px;
+
+  --x-small-space: 8px;
+  --small-space: 16px;
+  --medium-space: 32px;
+  --large-space: 64px;
+
+}
+
+/*
+  ========================
+  Global
+  ========================
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page-background-color);
+  /* border: 1px solid red; */
+}
+
+.container {
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 var(--medium-space);
+  box-sizing: border-box;
+}

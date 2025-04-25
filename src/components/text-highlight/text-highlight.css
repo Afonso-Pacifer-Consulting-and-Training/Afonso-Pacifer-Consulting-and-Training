@@ -1,0 +1,4 @@
+.text-highlight {
+  color: var(--highlight-color);
+  font-weight: 500;
+}

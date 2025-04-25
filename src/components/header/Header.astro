@@ -1,0 +1,21 @@
+---
+import './header.css';
+
+interface Props {
+  videoPath: string,
+}
+
+const { videoPath } = Astro.props;
+---
+
+<div class="header-container">
+  <header class="container header">
+
+    <div class="header__headline">
+      <slot/>
+    </div>
+
+    <iframe class="header__video" width="560" height="315" src={videoPath} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </header>
+</div>

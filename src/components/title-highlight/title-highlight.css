@@ -1,0 +1,6 @@
+.title-highlight {
+  box-sizing: border-box;
+  background-color: var(--highlight-soft-color);
+  display: inline-block;
+  padding: 4px 8px;
+}

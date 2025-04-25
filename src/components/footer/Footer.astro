@@ -1,0 +1,16 @@
+---
+import Svg from '@cxa/astro-inline-svg';
+import Heart from '../../assets/icons/heart.svg?raw';
+import AstroIcon from '../../assets/icons/astro-icon.svg?raw';
+import './footer.css';
+---
+
+<footer class="footer">
+  <small class="footer__text">
+    Design and code made with
+    <Svg raw={Heart} class="footer__icon footer__icon--pulse" />
+    and
+    <Svg raw={AstroIcon} class="footer__icon" />
+    <!-- by Afonso Pacifer. -->
+  </small>
+</footer>

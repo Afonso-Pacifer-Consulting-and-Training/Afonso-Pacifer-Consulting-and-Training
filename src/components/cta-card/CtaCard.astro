@@ -1,0 +1,35 @@
+---
+import CtaButton from '../cta-button/CtaButton.astro'
+import './cta-card.css';
+import { Image } from 'astro:assets';
+import kiwify from '../../assets/images/logo_kiwify.webp';
+
+interface Props {
+  percent: string;
+  date: string;
+  oldValue: string;
+  Installments: string;
+  newValue: string;
+  totalValue: string;
+  url: string;
+}
+
+const { percent, date, oldValue, Installments, newValue, totalValue, url } = Astro.props;
+---
+
+<div class="cta">
+
+  <span class="cta__description">Desconto de <span class="cta__tag">{percent}% OFF</span> até {date}!</span>
+  <span class="cta__old-value">De <span class="cta--through">R${oldValue}</span> por apenas:</span>
+
+  <span class="cta__new-value">{Installments}x <span class="cta--small">de</span> R${newValue}</span>
+  <span class="cta__total-value">ou R${totalValue} a vista!</span>
+
+  <CtaButton text="Quero me inscrever!" url={url}/>
+
+  <div class="cta__kiwify">
+    <Image src={kiwify} alt="kiwify logo" class="cta__kiwify__logo" />
+    <span class="cta__kiwify__text">Compra segura</span>
+  </div>
+
+</div>
